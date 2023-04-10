@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+    background-color: #252525;
+    color: #fff;
+}
+
+.imgSection {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+.contenedorTitulo {
+    display: flex;
+    flex-direction: row;
+    height: 220px;
+    margin-left: 10%;
+}
+
+.titulo {
+    font-size: 55px;
+    margin-top: 7%;
+}
+
+.logo {
+    width: 30%;
+    object-fit: cover;
+}
+
+/* MENU */
+
+.tituloDos {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    background-color: rgba(30, 143, 255, 0.493);
+    height: 100px;
+    align-items: center;
+}
+
+#menuHamburguesas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px 400px;
+    margin-top: 30px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nombre {
+    padding: 10px;
+}
+
+.ingredientes {
+    font-size: 15px;
+    width: 80%;
+    padding: 7px;
+    text-align:center;
+}
+
+.precio {
+    font-size: 17px;
+    padding: 7px;
+}
+
+.imgProducto {
+    width: 40%;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.btnAgregar {
+    margin-top: 20px;
+    width: 25%;
+    padding: 7px;
+    border-radius: 7px;
+    font-family: 'Lexend', sans-serif;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.btnAgregar:hover {
+    background-color: #252525;
+    color: #fff;
+    border-color: #fff;
+}
