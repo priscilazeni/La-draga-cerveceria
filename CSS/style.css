@@ -12,16 +12,17 @@ body {
 
 .imgSection {
     width: 100%;
-    height: 600px;
+    height: 550px;
     object-fit: cover;
     display: block;
+    margin-top: 50px;
 }
 
 .contenedorTitulo {
     display: flex;
     flex-direction: row;
     height: 220px;
-    margin-left: 10%;
+    justify-content: center;
 }
 
 .titulo {
@@ -41,57 +42,152 @@ body {
     justify-content: center;
     font-size: 40px;
     background-color: rgba(30, 143, 255, 0.493);
-    height: 100px;
+    height: 85px;
     align-items: center;
 }
 
-#menuHamburguesas {
+#menuHamburguesas, #menuStarters, #menuBebidas, #menuSalsas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 400px 400px 400px;
-    margin-top: 30px;
+    grid-template-rows: auto;
+    margin-top: 20px;
+    gap: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 70px;
 }
 
 .contenedor {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.nombre {
+.contenedorDos {
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedorTres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contenedorImg {
+    display: flex;
+    justify-content: center;
+}
+
+.nombre, .precio {
     padding: 10px;
+    font-size: 17px;
+    text-align: center;
 }
 
 .ingredientes {
     font-size: 15px;
+    padding: 7px;
+    text-align: justify;
+}
+
+.imgProductoStarters, .imgProductoHamburguesas {
+    width: 100%;
+    object-fit: scale-down;
+    padding: 7px;
+}
+
+.imgProductoBebidas {
     width: 80%;
-    padding: 7px;
-    text-align:center;
+    object-fit: scale-down;
+    margin-bottom: 20px;
 }
 
-.precio {
-    font-size: 17px;
-    padding: 7px;
-}
-
-.imgProducto {
-    width: 40%;
-    border-radius: 10px;
-    margin-top: 5px;
+.imgProductoSalsas {
+    width: 100%;
+    object-fit: scale-down;
 }
 
 .btnAgregar {
-    margin-top: 20px;
     width: 25%;
     padding: 7px;
     border-radius: 7px;
     font-family: 'Lexend', sans-serif;
     cursor: pointer;
     background-color: #fff;
+    margin-left: 5px;
+}
+
+.btnAgregarBebidas {
+    width: 25%;
+    padding: 7px;
+    border-radius: 7px;
+    font-family: 'Lexend', sans-serif;
+    cursor: pointer;
+    background-color: #fff;
+    margin-left: 30px;
 }
 
 .btnAgregar:hover {
     background-color: #252525;
     color: #fff;
     border-color: #fff;
+}
+
+/* FOOTER */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgba(30, 143, 255, 0.493);
+}
+
+.contenedorLogo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.logoFooter {
+    width: 70%;
+}
+
+.contenedorCuatro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedorCinco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dato {
+    padding: 15px;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.dato:hover {
+    text-decoration: underline;
+}   
+
+.contenedorRedes {
+    display: flex;
+    flex-direction: row;
+}
+
+.redes {
+    width: 60px;
+    padding: 5px;
+}
+
+.imgRedes {
+    width: 100%;
+    margin: 10px;
 }

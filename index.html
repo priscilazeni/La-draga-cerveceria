@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>La Draga - Menu & Take away</title>
+    <link rel="shortcout icon" href="./multimedia/Blue_Nautical_Anchor_Logo-removebg-preview.png">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
@@ -15,25 +18,64 @@
 
     <section>
         <div class="contenedorTitulo">
-            <img src="./multimedia/Blue_Nautical_Anchor_Logo-removebg-preview.png" alt="" class="logo">
-            <h2 class="titulo">MENU & TAKE AWAY</h2>
+            <img src="./multimedia/Blue_Nautical_Anchor_Logo-removebg-preview.png" alt="logo" class="logo" data-aos="flip-left">
+            <h2 class="titulo" data-aos="flip-left" data-aos-duration="1000">MENU & TAKE AWAY</h2>
         </div>
-        <img src="./multimedia/img-section.jpg" alt="imgHamburguesas" class="imgSection">
     </section>
+    
+
+    <img src="./multimedia/imgHamburguesas.jpg" alt="imgHamburguesa" class="imgSection">
 
     <h4 class="tituloDos">BURGERS</h4>
 
-    <div id="menuHamburguesas"></div>
-
-    <div id="menuStarters"></div>
+    <div id="menuHamburguesas" data-aos="fade-down" data-aos-duration="1000"></div>
 
     <img src="./multimedia/papas-fritas.jpg" alt="imgPapasFritas" class="imgSection">
-    
+
     <h4 class="tituloDos">STARTERS</h4>
+
+    <div id="menuStarters" data-aos="fade-down" data-aos-duration="1000"></div>
+
+    <img src="./multimedia/bebidas.jfif" alt="bebidas" class="imgSection">
+
+    <h4 class="tituloDos">BEBIDAS</h4>
+
+    <div id="menuBebidas" data-aos="fade-down" data-aos-duration="1000"></div>
+
+    <img src="./multimedia/salsas.jpg" alt="salsas" class="imgSection">
+
+    <h4 class="tituloDos">SALSAS</h4>
+
+    <div id="menuSalsas" data-aos="fade-down" data-aos-duration="1000"></div>
+
+    <footer>
+        <div class="contenedorLogo">
+            <img src="./multimedia/Blue_Nautical_Anchor_Logo-removebg-preview.png" alt="logo" class="logoFooter">
+        </div>
+  
+        <div class="contenedorCuatro">
+            <a href="" class="dato">SUCURSALES</a>
+            <a href="" class="dato">TRABAJA CON NOSOTROS</a>
+            <a href="" class="dato">CONTACTANOS</a>
+        </div>
+
+        <div class="contenedorCinco">
+            <p>SEGUINOS EN:</p>
+            <div class="contenedorRedes">
+                <a href="" class="redes"><img src="./multimedia/facebook (1).png" alt="facebook" class="imgRedes"></a>
+
+                <a href="" class="redes"><img src="./multimedia/instagram.png" alt="instagram" class="imgRedes"></a>
+            </div>
+        </div>
+    </footer>
+
+
 
     <script src="./JS/data.js"></script>
     <script src="./JS/main.js"></script>
-
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 </html>
